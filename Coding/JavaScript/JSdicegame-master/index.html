@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bruce's Dice Game</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div id="titles">
+        <h1 id="title"><center>Play Dice! RED player rolls<br>If you throw a 1 you LOOSE. First to >20 WINS
+            <br>Click on the dice<br></center></h1>
+    </div>
+    <div id="diceContainer">
+        <center><img id="diceFace" src="./img/dice1.png"/></center>
+    </div>
+    <div id="playerContainer">
+        <div>
+            <h1 id="player1" style="text-align: center">Player 1 has  
+                <span id="p1score" style="text-align: center">0</span></h1>
+            <h1 id="player2" style="text-align: center">Player 2 has 
+                <span id="p2score" style="text-align: center">0</span></h1>
+        </div>
+    </div> <!-- end playerContainer -->
+    <center><button id="startButton" onClick="startGame()">START GAME</button></center>
+
+</body>
+</html>
+
+<script src="./script.js"></script>
