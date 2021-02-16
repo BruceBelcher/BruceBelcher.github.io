@@ -111,8 +111,8 @@ body {
   .project-flex-container > div { 
     display: flex;
     background-color: whitesmoke;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     margin: 10px;
     align-items: center;
     /*text-align: center;*/
