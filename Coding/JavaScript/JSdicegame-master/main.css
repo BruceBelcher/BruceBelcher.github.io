@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0;
 }
+/*
 /* #diceContainer {
     height: 75vh;
     width: 75vh;
@@ -15,17 +16,17 @@ body {
     background-color: whitesmoke;
     align-items: center;
     justify-items: center;
-}*/
-
-
-/* #diceFace { */
-    /* width: 50%;
-    height: 50%; */
-    /* display: flex;
-    margin-left: auto;
-    margin-right: auto; */
 }
-/* #playerContainer { */
+
+
+ #diceFace { 
+     width: 50%;
+    height: 50%; 
+     display: flex;
+    margin-left: auto;
+    margin-right: auto; 
+}
+ #playerContainer {
     /* display: flex;
     width: 75vh;
     margin-left: auto;

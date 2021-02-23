@@ -1,25 +1,65 @@
+
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Hosting Page with github</title>
+        <title>Bruce Belcher</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./main.css">
+        
     </head>
     <body>
-        <h1>Hello - I'm hosted with GitHub Pages.</h1>
-        <div>
-            <a href="./Coding/Portfolio/index.html">
-            <img src="./Coding/Portfolio/images/mugShot.jpg" width= "75px" style= "vertical-align: middle;" >
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./images/CV-BruceBelcher-Jan-2021-pic.pdf" target="_blank">CV</a>
+            <a href="./contact.html" target="_blank">Contact</a>
+            <a href="./about.html" target="_blank">About Me</a>
+            <a href="./Coding/Portfolio/portfolio.html" target="">Portfolio</a>
+            <a href="./resources.html" target="_blank">Resources</a>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveToggle()">
+              <i class="fa fa-bars"></i>
             </a>
         </div>
+
+        <div class="textBox"> <!--Hero text-->
+            <h1>
+                Hello, I'm Bruce Belcher.
+            </h1>
+            <h2>
+                Welcome to my Portfolio. Please don't judge too harshly!<br>
+            </h2>
+            <h3>
+                The projects are learning excercises, not meant as 'production' code,
+                so you'll be able to find bugs quite easily.<br>
+                <br>
+                I'll be adding new projects and (hopefully) improving the website over time,
+                so please keep returning to see how I'm progressing.<br>
+                <br>
+                If you'd like to know about me, jump to the <a href="about.html">About Me</a> page for a summary,
+                if you'd like more detail, here's my 
+                <a href="images/CV-BruceBelcher-Jan-2021-pic.pdf">CV</a> and 
+                <a href="https://www.linkedin.com/in/belcherbruce">LinkedIN</a>, if you'd like to know even
+                more, invite me for an interview!<br>
+                <br>
+                To contact me, please visit the contacts page, or email me on:<br>
+                <a href="mailto:bruce.belcher@hotmail.co.uk">bruce.belcher@hotmail.co.uk</a>
+            </h3>
+        </div> <!--end of hero text-->
+
+        <!-- Wanted to have a minimal HTML file with only text in it. embedd is deprecated
+            tried iFrame but cant get it to size properly.
+            <iframe style="width: 70vw; height: 50vh;" src="hero.htm" title="hero text"></iframe>
+        -->
+
+        <div>
+            <button class="portfolioButt" onclick="window.location.href='./Coding/Portfolio/portfolio.html';">PORTFOLIO</button>
+        </div>
         
-        <script src="" async defer></script>
+        <script src="./makeRes.js" async defer></script>
     </body>
 </html>

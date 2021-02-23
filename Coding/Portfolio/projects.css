@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+/* Add a black background color to the top navigation */
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+
+
+  .flex-container {
+    display: flex;
+    border-style: solid;
+    flex-wrap: wrap;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .flex-container > div { 
+    display: flex;
+    background-color: whitesmoke;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    align-items: center;
+    /*text-align: center;*/
+    justify-content: center;
+    line-height: 75px;
+    /*font-size: 30px;*/
+  }
+
+  .project-flex-container {
+    display: flex;
+    border-style: solid;
+    flex-wrap: wrap;
+    background-color:grey;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .project-flex-container > div { 
+    /*display: flex;*/
+    background-color: whitesmoke;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 75px;
+   /* font-size: 30px;*/
+  }
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.project-flex-container div:hover .image {
+  opacity: 0.3;
+}
+
+.project-flex-container div:hover .iframe {
+  opacity: 1;
+}
+
+.iframe {
+  opacity: 0;
+  transition: .5s ease;
+  position: relative;
+ 
+  transform: translate(0%, -100%);
+  width:240px;
+  display: block;
+  color: white;
+  background-color: black;
+  font-family: "Special Elite", Arial, Helvetica, sans-serif;
+  border-color: black;
+  border-width: 5px ;
+ }
