@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
 
 html, body {
+    height: 100%;
     margin: 0;
     font-family: "Special Elite", Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
   }
 
 
@@ -91,13 +94,13 @@ iframe {
 }
 
 .portfolioBox {
-  position:fixed;
-  bottom: 10px;
-  background-color: tomato;
+/*  position:fixed;
+  bottom: 10px;*/
+  background-color: white;
 }
 .portfolioButt {
-  background-color:black;
-  color: white;
+  background-color:white;
+  color: black;
   padding: 20px;
   text-align: center;
   text-decoration: none;
