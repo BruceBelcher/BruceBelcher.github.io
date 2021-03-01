@@ -1,17 +1,8 @@
 html, body {
     height: 100%;
-    min-height: 100%;
+
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
   }
 
   .project-flex-container {
@@ -20,23 +11,21 @@ html, body {
     flex-wrap: wrap;
     border-style: solid;
     background-color:black;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
-    overflow: scroll;
+    align-content: flex-start;
   }
 
-  .project-flex-container > div { 
+ .project-flex-container > div { 
     display: flex;
     background-color: whitesmoke;
     color:black;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     margin: 10px;
-    align-items: center;
+    align-items:flex-start;
     text-align: center;
-    justify-content: center;
+    justify-content:center;
     line-height: 75px;
   }
 
@@ -52,26 +41,33 @@ html, body {
   opacity: 0.3;
 }
 
-.project-flex-container div:hover .iframe {
+.project-flex-container div:hover .iframeTextBox {
   opacity: 1;
+  z-index: 0;
 }
-
-/*perhaps look at having specific area at bottom of screen for iframe as it causes issues*/
-.iframe {
-  opacity: 0;
-  transition: .5s ease;
-  position: relative;
-  transform: translate(0%, -125%);
-  width:200px;
-  /*display: block;*/
-  color: white;
-  background-color: black;
-  font-family: "Special Elite", Arial, Helvetica, sans-serif;
-  border-color: black;
-  border-width: 5px ;
- }
 
  a {
    height:100%;
    width:100%;
+ }
+ 
+ .iframeTextBox {
+    z-index: -1;
+    position:fixed;
+    width:75%;
+    height: 25%;
+    border-color:white;
+    bottom: 20px;
+    left:50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    margin:auto;
+ }
+
+h3 {
+   font-size: 10pt;
+   color: white;
+   padding:10px;
  }
