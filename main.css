@@ -132,13 +132,13 @@ iframe {
 #mugShotBox > div {
   display: flex;
   width:50%;
+  flex-wrap: wrap;
 }
 #mugShot {
   align-self: center;
   border-radius: 50%;
-  filter:grayscale(100%) drop-shadow(10px 10px 20px gray);
+  filter:grayscale(100%) drop-shadow(10px 10px 30px gray);
   width:125px;
-  height: 125px;
   height: 125px;
  /* transform: translateY(40%);*/
   margin-right:30px;
