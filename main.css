@@ -124,4 +124,13 @@ iframe {
   transform: translate(-50%, -50%);
 }
 
+#mugShot {
+  border-radius: 40%;
+  filter:grayscale(100%) drop-shadow(10px 10px 20px gray);
+  width:100px;
+  height: 125px;
+  transform: translateY(50%);
+  margin:30px;
+
+}
 
