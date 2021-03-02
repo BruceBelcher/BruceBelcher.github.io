@@ -125,14 +125,22 @@ iframe {
   transform: translate(-50%, -50%);
 }
 
+#mugShotBox {
+  display:flex;
+  flex-wrap: wrap;
+}
+#mugShotBox > div {
+  display: flex;
+  width:50%;
+}
 #mugShot {
-  /*display:inline-block;*/
+  align-self: center;
   border-radius: 50%;
   filter:grayscale(100%) drop-shadow(10px 10px 20px gray);
   width:125px;
   height: 125px;
   height: 125px;
-  transform: translateY(50%);
-  margin:30px;
+ /* transform: translateY(40%);*/
+  margin-right:30px;
 }
 
