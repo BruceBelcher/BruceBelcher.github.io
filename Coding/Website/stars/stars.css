@@ -1,0 +1,23 @@
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+#starField {
+    background-color: black;
+    height: 100%;
+    width:100%;
+    border:1px;
+    border:solid;
+    border-color: black;
+    z-index:-1;
+}
+
+button {
+    z-index:0;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:10px;
+}
